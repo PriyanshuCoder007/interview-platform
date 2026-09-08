@@ -1,0 +1,4215 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "What happens if you try to pipe data to a non-writable stream in Node.js?",
+      "description": "Piping to a non-writable stream.",
+      "answers": {
+        "answer_a": "The readable stream pauses and buffers data",
+        "answer_b": "The data is queued in the event loop",
+        "answer_c": "An error is thrown immediately",
+        "answer_d": "The stream emits a 'drain' event"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 2,
+      "question": "How do you handle state updates in a React functional component?",
+      "description": "Managing state in React functional components.",
+      "answers": {
+        "answer_a": "Using this.state and this.setState",
+        "answer_b": "Using useReducer for all state updates",
+        "answer_c": "Using Context API directly",
+        "answer_d": "Using the useState hook"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 3,
+      "question": "How do you write a MySQL query to join two tables with a foreign key?",
+      "description": "Performing a JOIN operation in MySQL.",
+      "answers": {
+        "answer_a": "SELECT * FROM table1 UNION ALL table2",
+        "answer_b": "SELECT * FROM table1 JOIN table2 ON table1.id = table2.id",
+        "answer_c": "SELECT * FROM table1, table2 WHERE table1.id = table2.id",
+        "answer_d": "SELECT * FROM table1 CROSS JOIN table2"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 4,
+      "question": "What is the correct way to use an aggregation pipeline in MongoDB?",
+      "description": "Using MongoDB aggregation for data processing.",
+      "answers": {
+        "answer_a": "db.collection.find().group({ key: value })",
+        "answer_b": "db.collection.mapReduce({ key: value })",
+        "answer_c": "db.collection.aggregate([{ $match: { key: value } }])",
+        "answer_d": "db.collection.findAndModify({ key: value })"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 5,
+      "question": "How does Express.js handle errors in asynchronous middleware?",
+      "description": "Error handling in asynchronous Express.js middleware.",
+      "answers": {
+        "answer_a": "Uses next() without try-catch",
+        "answer_b": "Logs errors to console automatically",
+        "answer_c": "Wraps errors in promises",
+        "answer_d": "Requires try-catch or async middleware wrapper"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 6,
+      "question": "How can you optimize React component rendering for performance?",
+      "description": "Optimizing React performance with memoization.",
+      "answers": {
+        "answer_a": "Using useState for all props",
+        "answer_b": "Wrapping components in useEffect",
+        "answer_c": "Using React.memo and useCallback",
+        "answer_d": "Increasing state updates"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 7,
+      "question": "How do you optimize a complex MySQL query using indexes?",
+      "description": "Improving MySQL query performance.",
+      "answers": {
+        "answer_a": "Use multiple tables without indexes",
+        "answer_b": "Add indexes to frequently queried columns",
+        "answer_c": "Increase buffer pool size",
+        "answer_d": "Use temporary tables for queries"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 8,
+      "question": "What is a sharding strategy in MongoDB for distributing data?",
+      "description": "Implementing sharding in MongoDB.",
+      "answers": {
+        "answer_a": "Using a single node for all data",
+        "answer_b": "Replicating data to all servers",
+        "answer_c": "Using indexes for distribution",
+        "answer_d": "Distributing data based on a shard key"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 9,
+      "question": "How can you secure an Express.js API using JWT?",
+      "description": "Implementing JWT authentication in Express.js.",
+      "answers": {
+        "answer_a": "Store JWT in cookies without verification",
+        "answer_b": "Use OAuth for all endpoints",
+        "answer_c": "Use middleware to verify JWT tokens",
+        "answer_d": "Use session-based authentication"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 10,
+      "question": "How do you use worker threads in Node.js for CPU-intensive tasks?",
+      "description": "Using worker threads for parallel processing.",
+      "answers": {
+        "answer_a": "Use setTimeout for tasks",
+        "answer_b": "Run tasks in the event loop",
+        "answer_c": "Use fork() for multiprocessing",
+        "answer_d": "Use the worker_threads module"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 11,
+      "question": "How do you use the useEffect hook in React to handle side effects?",
+      "description": "Managing side effects in React functional components.",
+      "answers": {
+        "answer_a": "Use useState for side effects",
+        "answer_b": "Call useEffect with a callback and dependency array",
+        "answer_c": "Use componentDidMount instead",
+        "answer_d": "Trigger useEffect with setInterval"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 12,
+      "question": "How does Node.js handle module caching?",
+      "description": "Understanding module caching in Node.js.",
+      "answers": {
+        "answer_a": "Reloads modules on every import",
+        "answer_b": "Stores modules in memory after first load",
+        "answer_c": "Uses file system for caching",
+        "answer_d": "Modules are cached after the first load"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of transaction isolation levels in MySQL?",
+      "description": "Managing transaction consistency in MySQL.",
+      "answers": {
+        "answer_a": "Improve query performance",
+        "answer_b": "Control the visibility of changes between transactions",
+        "answer_c": "Reduce database size",
+        "answer_d": "Enable automatic backups"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 14,
+      "question": "How do you create an index in MongoDB to improve query performance?",
+      "description": "Indexing for MongoDB query optimization.",
+      "answers": {
+        "answer_a": "db.collection.addIndex({ field: 1 })",
+        "answer_b": "db.collection.ensureIndex({ field: true })",
+        "answer_c": "db.collection.createIndex({ field: 1 })",
+        "answer_d": "db.collection.index({ field: 1 })"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 15,
+      "question": "How do you enable CORS in an Express.js application?",
+      "description": "Configuring CORS in Express.js.",
+      "answers": {
+        "answer_a": "Set headers manually for each route",
+        "answer_b": "Use helmet middleware",
+        "answer_c": "Configure res.header for all routes",
+        "answer_d": "Use the cors middleware"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 16,
+      "question": "How do you implement a custom hook in React for data fetching?",
+      "description": "Creating custom hooks for data fetching in React.",
+      "answers": {
+        "answer_a": "Use fetch in componentDidMount",
+        "answer_b": "Use useState and useEffect in a custom function",
+        "answer_c": "Use axios in a class component",
+        "answer_d": "Use useReducer for fetching"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 17,
+      "question": "How do you handle uncaught exceptions in a Node.js application?",
+      "description": "Managing uncaught exceptions in Node.js.",
+      "answers": {
+        "answer_a": "Wrap all code in try-catch",
+        "answer_b": "Use console.error for logging",
+        "answer_c": "Use process.on('uncaughtException')",
+        "answer_d": "Increase event loop capacity"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 18,
+      "question": "How do you partition large tables in MySQL for performance?",
+      "description": "Using table partitioning in MySQL.",
+      "answers": {
+        "answer_a": "Use multiple databases",
+        "answer_b": "Use PARTITION BY to split tables",
+        "answer_c": "Increase index size",
+        "answer_d": "Use temporary tables"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 19,
+      "question": "What is the role of replica set failover in MongoDB?",
+      "description": "Understanding failover in MongoDB replica sets.",
+      "answers": {
+        "answer_a": "Distributes data across shards",
+        "answer_b": "Replicates data to a new database",
+        "answer_c": "Automatically promotes a secondary to primary",
+        "answer_d": "Backs up data periodically"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 20,
+      "question": "How do you implement rate-limiting in an Express.js API?",
+      "description": "Applying rate-limiting to Express.js routes.",
+      "answers": {
+        "answer_a": "Track requests with in-memory storage",
+        "answer_b": "Use the express-rate-limit middleware",
+        "answer_c": "Use setTimeout for delays",
+        "answer_d": "Limit connections in nginx"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 21,
+      "question": "How do you manage context in React for global state?",
+      "description": "Using React Context API for state management.",
+      "answers": {
+        "answer_a": "Use useState for global state",
+        "answer_b": "Store state in local storage",
+        "answer_c": "Use createContext and useContext",
+        "answer_d": "Pass props through all components"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the Node.js cluster module?",
+      "description": "Using clustering in Node.js for performance.",
+      "answers": {
+        "answer_a": "Manage database connections",
+        "answer_b": "Enable multi-core processing",
+        "answer_c": "Cache HTTP responses",
+        "answer_d": "Handle asynchronous tasks"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 23,
+      "question": "How do you create a foreign key constraint in MySQL?",
+      "description": "Defining relationships in MySQL tables.",
+      "answers": {
+        "answer_a": "CREATE INDEX ON table(column)",
+        "answer_b": "ADD CONSTRAINT fk_name ON table(column)",
+        "answer_c": "ALTER TABLE table ADD FOREIGN KEY (column) REFERENCES parent(id)",
+        "answer_d": "SET CONSTRAINT ON table(column)"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 24,
+      "question": "How do you perform a bulk write operation in MongoDB?",
+      "description": "Executing multiple write operations in MongoDB.",
+      "answers": {
+        "answer_a": "Use db.collection.insertMany()",
+        "answer_b": "Use db.collection.bulkWrite()",
+        "answer_c": "Use db.collection.updateMany()",
+        "answer_d": "Use db.collection.replaceMany()"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 25,
+      "question": "How do you parse JSON request bodies in Express.js?",
+      "description": "Handling JSON data in Express.js.",
+      "answers": {
+        "answer_a": "Use body-parser.json()",
+        "answer_b": "Use JSON.parse on req.body",
+        "answer_c": "Use req.params for JSON",
+        "answer_d": "Use express.json() middleware"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 26,
+      "question": "How do you handle concurrent API calls in React with Redux?",
+      "description": "Managing concurrent API requests in React.",
+      "answers": {
+        "answer_a": "Use useEffect for all API calls",
+        "answer_b": "Use Redux Thunk with async/await",
+        "answer_c": "Use fetch in useState",
+        "answer_d": "Use Promise.all without middleware"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 27,
+      "question": "How do you debug memory leaks in a Node.js application?",
+      "description": "Identifying and fixing memory leaks in Node.js.",
+      "answers": {
+        "answer_a": "Use console.memory",
+        "answer_b": "Increase heap size",
+        "answer_c": "Use heap snapshots with Chrome DevTools",
+        "answer_d": "Restart the application periodically"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 28,
+      "question": "How do you use stored procedures in MySQL?",
+      "description": "Implementing stored procedures in MySQL.",
+      "answers": {
+        "answer_a": "Use triggers for logic",
+        "answer_b": "Write inline SQL queries",
+        "answer_c": "Use views instead of procedures",
+        "answer_d": "CREATE PROCEDURE and CALL"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 29,
+      "question": "How do you configure a MongoDB replica set?",
+      "description": "Setting up replication in MongoDB.",
+      "answers": {
+        "answer_a": "Use db.createCollection()",
+        "answer_b": "Use rs.initiate() and rs.add()",
+        "answer_c": "Use mongod --replSet",
+        "answer_d": "Use sh.addShard()"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 30,
+      "question": "How do you implement WebSocket support in Express.js?",
+      "description": "Using WebSockets with Express.js.",
+      "answers": {
+        "answer_a": "Use HTTP long polling",
+        "answer_b": "Use the ws library with Express",
+        "answer_c": "Use express.json for WebSockets",
+        "answer_d": "Use setInterval for updates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 31,
+      "question": "How do you prevent re-renders in React with useMemo?",
+      "description": "Optimizing React with useMemo.",
+      "answers": {
+        "answer_a": "Use useState for memoization",
+        "answer_b": "Wrap expensive computations in useMemo",
+        "answer_c": "Use useEffect for rendering",
+        "answer_d": "Use Redux for memoized values"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 32,
+      "question": "How does Node.js handle asynchronous I/O operations?",
+      "description": "Understanding asynchronous I/O in Node.js.",
+      "answers": {
+        "answer_a": "Using synchronous callbacks",
+        "answer_b": "Blocking the event loop",
+        "answer_c": "Using worker threads",
+        "answer_d": "Using the event loop and callbacks"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 33,
+      "question": "How do you perform a LEFT JOIN in MySQL?",
+      "description": "Using LEFT JOIN in MySQL queries.",
+      "answers": {
+        "answer_a": "SELECT * FROM table1 INNER JOIN table2",
+        "answer_b": "SELECT * FROM table1 RIGHT JOIN table2",
+        "answer_c": "SELECT * FROM table1 LEFT JOIN table2 ON table1.id = table2.id",
+        "answer_d": "SELECT * FROM table1, table2 WHERE table1.id = table2.id"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 34,
+      "question": "How do you update a document in MongoDB?",
+      "description": "Updating documents in MongoDB collections.",
+      "answers": {
+        "answer_a": "db.collection.modifyOne({ field: value })",
+        "answer_b": "db.collection.replaceOne({ field: value })",
+        "answer_c": "db.collection.save({ field: value })",
+        "answer_d": "db.collection.updateOne({ filter }, { $set: { field: value } })"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 35,
+      "question": "How do you define a route in Express.js?",
+      "description": "Setting up routes in Express.js.",
+      "answers": {
+        "answer_a": "app.route('/path').method(callback)",
+        "answer_b": "app.use('/path', callback)",
+        "answer_c": "app.get('/path', callback)",
+        "answer_d": "app.defineRoute('/path', callback)"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 36,
+      "question": "How do you handle errors in React Query?",
+      "description": "Managing errors with React Query.",
+      "answers": {
+        "answer_a": "Use try-catch in fetch calls",
+        "answer_b": "Use the onError callback in useQuery",
+        "answer_c": "Use useEffect for error handling",
+        "answer_d": "Use Redux middleware"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 37,
+      "question": "How do you scale a Node.js application horizontally?",
+      "description": "Scaling Node.js applications.",
+      "answers": {
+        "answer_a": "Increase heap memory",
+        "answer_b": "Use PM2 without clustering",
+        "answer_c": "Use a load balancer and multiple instances",
+        "answer_d": "Use single-threaded processes"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 38,
+      "question": "How do you use stored procedures in MySQL?",
+      "description": "Implementing stored procedures in MySQL.",
+      "answers": {
+        "answer_a": "Use triggers for stored logic",
+        "answer_b": "Write inline SQL queries",
+        "answer_c": "Use views for procedures",
+        "answer_d": "CREATE PROCEDURE and CALL"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 39,
+      "question": "How do you configure a MongoDB replica set?",
+      "description": "Setting up replication in MongoDB.",
+      "answers": {
+        "answer_a": "Use db.createCollection()",
+        "answer_b": "Use rs.initiate() and rs.add()",
+        "answer_c": "Use mongod --replSet",
+        "answer_d": "Use sh.addShard()"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 40,
+      "question": "How do you implement WebSocket support in Express.js?",
+      "description": "Using WebSockets with Express.js.",
+      "answers": {
+        "answer_a": "Use HTTP long polling",
+        "answer_b": "Use the ws library with Express",
+        "answer_c": "Use express.json for WebSockets",
+        "answer_d": "Use setInterval for updates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 41,
+      "question": "How do you use React Router for navigation?",
+      "description": "Implementing navigation in React.",
+      "answers": {
+        "answer_a": "Use useState for routing",
+        "answer_b": "Use BrowserRouter and Routes",
+        "answer_c": "Use window.location.href",
+        "answer_d": "Use useEffect for navigation"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the Node.js require() function?",
+      "description": "Understanding module imports in Node.js.",
+      "answers": {
+        "answer_a": "Execute asynchronous tasks",
+        "answer_b": "Cache module dependencies",
+        "answer_c": "Imports modules into the application",
+        "answer_d": "Handle HTTP responses"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 43,
+      "question": "How do you create a unique index in MySQL?",
+      "description": "Ensuring unique values in MySQL.",
+      "answers": {
+        "answer_a": "CREATE INDEX ON table(column)",
+        "answer_b": "CREATE UNIQUE INDEX index_name ON table(column)",
+        "answer_c": "ALTER TABLE table ADD INDEX(column)",
+        "answer_d": "SET UNIQUE CONSTRAINT ON table(column)"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 44,
+      "question": "How do you delete a document in MongoDB?",
+      "description": "Removing documents from MongoDB collections.",
+      "answers": {
+        "answer_a": "db.collection.remove({ filter })",
+        "answer_b": "db.collection.dropDocument({ filter })",
+        "answer_c": "db.collection.deleteOne({ filter })",
+        "answer_d": "db.collection.updateOne({ filter }, { $unset: {} })"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 45,
+      "question": "How do you handle query parameters in Express.js?",
+      "description": "Accessing query parameters in Express.js routes.",
+      "answers": {
+        "answer_a": "Use req.params for queries",
+        "answer_b": "Use req.body for queries",
+        "answer_c": "Use req.query",
+        "answer_d": "Use req.headers.query"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 46,
+      "question": "How do you lazy-load components in React?",
+      "description": "Optimizing React with lazy loading.",
+      "answers": {
+        "answer_a": "Use useEffect for dynamic imports",
+        "answer_b": "Use React.lazy and Suspense",
+        "answer_c": "Import all components statically",
+        "answer_d": "Use Redux for lazy loading"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 47,
+      "question": "How do you implement clustering in Node.js?",
+      "description": "Using the cluster module in Node.js.",
+      "answers": {
+        "answer_a": "Use worker_threads for clustering",
+        "answer_b": "Use PM2 without cluster module",
+        "answer_c": "Use cluster.fork() to create workers",
+        "answer_d": "Use setInterval for workers"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 48,
+      "question": "How do you optimize MySQL queries with EXPLAIN?",
+      "description": "Analyzing query performance in MySQL.",
+      "answers": {
+        "answer_a": "Use SHOW INDEXES",
+        "answer_b": "Increase query cache",
+        "answer_c": "Use EXPLAIN to analyze query execution plans",
+        "answer_d": "Enable query logging"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 49,
+      "question": "How do you implement change streams in MongoDB?",
+      "description": "Monitoring changes in MongoDB collections.",
+      "answers": {
+        "answer_a": "Use db.collection.onChange()",
+        "answer_b": "Use db.collection.watch()",
+        "answer_c": "Use setInterval for polling",
+        "answer_d": "Use aggregation pipelines"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 50,
+      "question": "How do you handle file uploads in Express.js?",
+      "description": "Managing file uploads in Express.js.",
+      "answers": {
+        "answer_a": "Use body-parser for file uploads",
+        "answer_b": "Use express-fileupload middleware",
+        "answer_c": "Use fs.readFile for uploads",
+        "answer_d": "Use multer middleware"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 51,
+      "question": "How do you pass props to a React component?",
+      "description": "Passing data to React components.",
+      "answers": {
+        "answer_a": "Use useState for props",
+        "answer_b": "Use props in the component's parameters",
+        "answer_c": "Use local storage for props",
+        "answer_d": "Use Redux for all props"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 52,
+      "question": "What is the purpose of the Node.js event emitter?",
+      "description": "Using events in Node.js.",
+      "answers": {
+        "answer_a": "Handle HTTP requests",
+        "answer_b": "Cache module dependencies",
+        "answer_c": "Handle asynchronous events",
+        "answer_d": "Execute synchronous tasks"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 53,
+      "question": "How do you create a view in MySQL?",
+      "description": "Defining views in MySQL.",
+      "answers": {
+        "answer_a": "CREATE TABLE view_name",
+        "answer_b": "CREATE VIEW view_name AS SELECT ...",
+        "answer_c": "CREATE INDEX view_name",
+        "answer_d": "CREATE PROCEDURE view_name"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 54,
+      "question": "How do you find documents in MongoDB with a specific field value?",
+      "description": "Querying MongoDB collections.",
+      "answers": {
+        "answer_a": "db.collection.findOne({ field: value })",
+        "answer_b": "db.collection.search({ field: value })",
+        "answer_c": "db.collection.query({ field: value })",
+        "answer_d": "db.collection.find({ field: value })"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 55,
+      "question": "How do you serve static files in Express.js?",
+      "description": "Serving static assets in Express.js.",
+      "answers": {
+        "answer_a": "Use req.files for static files",
+        "answer_b": "Use res.sendFile for each file",
+        "answer_c": "Use express.static() middleware",
+        "answer_d": "Use fs.readFile for serving"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 56,
+      "question": "How do you handle form submissions in React?",
+      "description": "Managing forms in React.",
+      "answers": {
+        "answer_a": "Use Redux for form state",
+        "answer_b": "Use window.submitForm",
+        "answer_c": "Use onSubmit with controlled components",
+        "answer_d": "Use useEffect for forms"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 57,
+      "question": "How do you create a custom Transform stream in Node.js?",
+      "description": "Implementing Transform streams in Node.js.",
+      "answers": {
+        "answer_a": "Use ReadableStream.extend",
+        "answer_b": "Extend Transform and implement _transform",
+        "answer_c": "Use Writable stream methods",
+        "answer_d": "Use stream.pipe directly"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 58,
+      "question": "How do you handle deadlocks in MySQL?",
+      "description": "Managing deadlocks in MySQL transactions.",
+      "answers": {
+        "answer_a": "Increase table size",
+        "answer_b": "Use proper transaction isolation and retries",
+        "answer_c": "Disable foreign keys",
+        "answer_d": "Use single transactions"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 59,
+      "question": "How do you use MongoDB transactions?",
+      "description": "Implementing transactions in MongoDB.",
+      "answers": {
+        "answer_a": "Use db.collection.transactionStart()",
+        "answer_b": "Use startSession() and withTransaction()",
+        "answer_c": "Use bulkWrite for transactions",
+        "answer_d": "Use single write operations"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 60,
+      "question": "How do you implement middleware chaining in Express.js?",
+      "description": "Using multiple middleware in Express.js.",
+      "answers": {
+        "answer_a": "Use single middleware per route",
+        "answer_b": "Pass multiple middleware to app.use()",
+        "answer_c": "Use res.send in middleware",
+        "answer_d": "Use route-specific middleware only"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 61,
+      "question": "How do you use React portals for rendering?",
+      "description": "Rendering components outside the DOM hierarchy.",
+      "answers": {
+        "answer_a": "Use useEffect for portals",
+        "answer_b": "Use Redux for DOM rendering",
+        "answer_c": "Use ReactDOM.createPortal()",
+        "answer_d": "Use window.appendChild"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 62,
+      "question": "How do you handle file streams in Node.js?",
+      "description": "Reading and writing files with streams.",
+      "answers": {
+        "answer_a": "Use fs.readFileSync()",
+        "answer_b": "Use fs.createReadStream() and fs.createWriteStream()",
+        "answer_c": "Use buffers with fs.readFile",
+        "answer_d": "Use JSON streams"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 63,
+      "question": "How do you normalize a MySQL database?",
+      "description": "Applying normalization in MySQL.",
+      "answers": {
+        "answer_a": "Increase table size",
+        "answer_b": "Use denormalized tables",
+        "answer_c": "Organize tables to reduce redundancy",
+        "answer_d": "Remove all foreign keys"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 64,
+      "question": "How do you sort query results in MongoDB?",
+      "description": "Sorting documents in MongoDB.",
+      "answers": {
+        "answer_a": "Use db.collection.order({ field: 1 })",
+        "answer_b": "Use db.collection.find().sort({ field: 1 })",
+        "answer_c": "Use db.collection.find().orderBy({ field: 1 })",
+        "answer_d": "Use db.collection.aggregate([{ $sort: { field: 1 } }])"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 65,
+      "question": "How do you use environment variables in Express.js?",
+      "description": "Managing configuration in Express.js.",
+      "answers": {
+        "answer_a": "Hardcode values in routes",
+        "answer_b": "Use req.env for configs",
+        "answer_c": "Use process.env with dotenv",
+        "answer_d": "Use query parameters for configs"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 66,
+      "question": "How do you implement server-side rendering in React?",
+      "description": "Using SSR in React applications.",
+      "answers": {
+        "answer_a": "Use client-side rendering with useEffect",
+        "answer_b": "Use ReactDOMServer.renderToString()",
+        "answer_c": "Use fetch in useState",
+        "answer_d": "Use Redux for SSR"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 67,
+      "question": "How do you handle unhandled promise rejections in Node.js?",
+      "description": "Managing promise errors in Node.js.",
+      "answers": {
+        "answer_a": "Use try-catch for all promises",
+        "answer_b": "Log errors with console.error",
+        "answer_c": "Use process.on('unhandledRejection')",
+        "answer_d": "Use setTimeout for promises"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 68,
+      "question": "How do you use MySQL events for scheduling?",
+      "description": "Scheduling tasks in MySQL.",
+      "answers": {
+        "answer_a": "Use cron jobs in Node.js",
+        "answer_b": "CREATE EVENT for scheduled tasks",
+        "answer_c": "Use triggers for scheduling",
+        "answer_d": "Use stored procedures for events"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 69,
+      "question": "How do you implement text search in MongoDB?",
+      "description": "Using text indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use $regex for text search",
+        "answer_b": "Create a text index and use $text operator",
+        "answer_c": "Use find() with string matching",
+        "answer_d": "Use aggregation for text"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 70,
+      "question": "How do you compress responses in Express.js?",
+      "description": "Optimizing response size in Express.js.",
+      "answers": {
+        "answer_a": "Use gzip manually",
+        "answer_b": "Use compression middleware",
+        "answer_c": "Use JSON.stringify for compression",
+        "answer_d": "Reduce response size in routes"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 71,
+      "question": "How do you use React fragments?",
+      "description": "Avoiding extra DOM nodes in React.",
+      "answers": {
+        "answer_a": "Use div for grouping",
+        "answer_b": "Use <Fragment> or <>",
+        "answer_c": "Use span for all components",
+        "answer_d": "Use Redux for grouping"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 72,
+      "question": "How do you create a readable stream in Node.js?",
+      "description": "Implementing readable streams in Node.js.",
+      "answers": {
+        "answer_a": "Use Writable stream methods",
+        "answer_b": "Extend Readable and implement _read",
+        "answer_c": "Use Transform stream for reading",
+        "answer_d": "Use fs.readFile for streams"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 73,
+      "question": "How do you handle NULL values in MySQL queries?",
+      "description": "Managing NULLs in MySQL.",
+      "answers": {
+        "answer_a": "Use = NULL in WHERE",
+        "answer_b": "Use IS NULL or IS NOT NULL",
+        "answer_c": "Use NULLIF in queries",
+        "answer_d": "Use COALESCE for all NULLs"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 74,
+      "question": "How do you limit query results in MongoDB?",
+      "description": "Restricting result sets in MongoDB.",
+      "answers": {
+        "answer_a": "Use find().restrict(n)",
+        "answer_b": "Use find().maxResults(n)",
+        "answer_c": "Use find().count(n)",
+        "answer_d": "Use find().limit(n)"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 75,
+      "question": "How do you protect routes in Express.js?",
+      "description": "Securing Express.js routes.",
+      "answers": {
+        "answer_a": "Use query parameters for auth",
+        "answer_b": "Use session-based auth only",
+        "answer_c": "Use middleware to check authentication",
+        "answer_d": "Use static routes for security"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 76,
+      "question": "How do you test React components?",
+      "description": "Unit testing React components.",
+      "answers": {
+        "answer_a": "Use Redux for testing state",
+        "answer_b": "Use Jest and React Testing Library",
+        "answer_c": "Manually render in browser",
+        "answer_d": "Use useEffect for tests"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 77,
+      "question": "How do you profile a Node.js application?",
+      "description": "Analyzing Node.js performance.",
+      "answers": {
+        "answer_a": "Use console.time for profiling",
+        "answer_b": "Use --prof and node-tick-processor",
+        "answer_c": "Increase memory allocation",
+        "answer_d": "Use PM2 for profiling"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 78,
+      "question": "How do you use MySQL subqueries?",
+      "description": "Writing subqueries in MySQL.",
+      "answers": {
+        "answer_a": "Use JOIN for all queries",
+        "answer_b": "Use query within another query",
+        "answer_c": "Use stored procedures",
+        "answer_d": "Use views instead"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 79,
+      "question": "How do you use MongoDB geospatial queries?",
+      "description": "Querying geospatial data in MongoDB.",
+      "answers": {
+        "answer_a": "Use $regex for coordinates",
+        "answer_b": "Use $geoNear or $near operators",
+        "answer_c": "Use find() with coordinates",
+        "answer_d": "Use aggregation for geo queries"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 80,
+      "question": "How do you implement API versioning in Express.js?",
+      "description": "Managing API versions in Express.js.",
+      "answers": {
+        "answer_a": "Use query parameters for versions",
+        "answer_b": "Use route prefixes like /v1/",
+        "answer_c": "Use headers for versioning",
+        "answer_d": "Use separate servers for versions"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 81,
+      "question": "How do you use controlled components in React?",
+      "description": "Managing form inputs in React.",
+      "answers": {
+        "answer_a": "Use uncontrolled inputs with refs",
+        "answer_b": "Bind input values to state",
+        "answer_c": "Use Redux for all forms",
+        "answer_d": "Use useEffect for inputs"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 82,
+      "question": "How do you handle child processes in Node.js?",
+      "description": "Using child processes in Node.js.",
+      "answers": {
+        "answer_a": "Use worker_threads for processes",
+        "answer_b": "Use the child_process module",
+        "answer_c": "Use async/await for processes",
+        "answer_d": "Use setInterval for processes"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 83,
+      "question": "How do you create a custom context provider in React?",
+      "description": "Implementing custom context in React.",
+      "answers": {
+        "answer_a": "Use useState for context",
+        "answer_b": "Use Redux for context",
+        "answer_c": "Use useEffect for context",
+        "answer_d": "Use createContext and a Provider component"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 84,
+      "question": "How do you manage form validation in React?",
+      "description": "Validating form inputs in React.",
+      "answers": {
+        "answer_a": "Use libraries like Formik or handle with state",
+        "answer_b": "Use Redux for validation",
+        "answer_c": "Use HTML validation only",
+        "answer_d": "Use useEffect for validation"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 85,
+      "question": "How do you fetch data in a React component?",
+      "description": "Making API calls in React.",
+      "answers": {
+        "answer_a": "Use Redux for all fetches",
+        "answer_b": "Use useEffect with fetch or axios",
+        "answer_c": "Use window.fetch in useState",
+        "answer_d": "Use componentDidMount for fetches"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 86,
+      "question": "How do you conditionally render components in React?",
+      "description": "Rendering components based on conditions.",
+      "answers": {
+        "answer_a": "Use switch statements in JSX",
+        "answer_b": "Use Redux for conditional rendering",
+        "answer_c": "Use ternary operators or &&",
+        "answer_d": "Use if-else in useEffect"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 87,
+      "question": "How do you style React components?",
+      "description": "Applying styles in React.",
+      "answers": {
+        "answer_a": "Use inline JavaScript styles only",
+        "answer_b": "Use CSS modules, styled-components, or inline styles",
+        "answer_c": "Use HTML style attributes",
+        "answer_d": "Use Redux for styling"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 88,
+      "question": "How do you manage component lifecycle in React hooks?",
+      "description": "Handling lifecycle events with hooks.",
+      "answers": {
+        "answer_a": "Use class component lifecycle methods",
+        "answer_b": "Use Redux for lifecycle management",
+        "answer_c": "Use useState for lifecycle",
+        "answer_d": "Use useEffect for mount, update, and unmount"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 89,
+      "question": "How do you share code between React components?",
+      "description": "Reusing logic in React.",
+      "answers": {
+        "answer_a": "Use custom hooks or HOCs",
+        "answer_b": "Use Redux for all shared logic",
+        "answer_c": "Duplicate code in components",
+        "answer_d": "Use useEffect for sharing"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 90,
+      "question": "How do you optimize React concurrent rendering?",
+      "description": "Using concurrent features in React.",
+      "answers": {
+        "answer_a": "Use useEffect for concurrency",
+        "answer_b": "Use startTransition and useDeferredValue",
+        "answer_c": "Use useState for rendering",
+        "answer_d": "Use Redux for concurrent updates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 91,
+      "question": "How do you implement suspense for data fetching in React?",
+      "description": "Using Suspense for async operations.",
+      "answers": {
+        "answer_a": "Use useEffect for async fetching",
+        "answer_b": "Use Redux for suspense",
+        "answer_c": "Wrap components in Suspense with a fallback",
+        "answer_d": "Use fetch in useState"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 92,
+      "question": "How do you handle complex animations in React?",
+      "description": "Implementing animations in React.",
+      "answers": {
+        "answer_a": "Use libraries like Framer Motion or React Spring",
+        "answer_b": "Use CSS keyframes only",
+        "answer_c": "Use setInterval for animations",
+        "answer_d": "Use Redux for animations"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 93,
+      "question": "How do you implement drag-and-drop in React?",
+      "description": "Adding drag-and-drop functionality.",
+      "answers": {
+        "answer_a": "Use Redux for drag-and-drop",
+        "answer_b": "Use react-dnd or native HTML5 API",
+        "answer_c": "Use window.drag events",
+        "answer_d": "Use CSS for drag-and-drop"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 94,
+      "question": "How do you optimize React for SEO?",
+      "description": "Improving SEO in React applications.",
+      "answers": {
+        "answer_a": "Use client-side rendering only",
+        "answer_b": "Add meta tags in useEffect",
+        "answer_c": "Use static HTML pages",
+        "answer_d": "Use server-side rendering or Next.js"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 95,
+      "question": "How do you implement internationalization in React?",
+      "description": "Adding i18n support in React.",
+      "answers": {
+        "answer_a": "Hardcode translations in components",
+        "answer_b": "Use libraries like react-i18next",
+        "answer_c": "Use useState for translations",
+        "answer_d": "Use Redux for i18n"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+
+    {
+      "id": 96,
+      "question": "How do you handle WebSocket connections in React?",
+      "description": "Managing WebSockets in React.",
+      "answers": {
+        "answer_a": "Use Redux for WebSocket state",
+        "answer_b": "Use useState to store WebSocket messages",
+        "answer_c": "Use window.WebSocket directly in render",
+        "answer_d": "Use useEffect to manage WebSocket connections"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 97,
+      "question": "How do you efficiently handle large file downloads in a Node.js server?",
+      "description": "Streaming large files in Node.js.",
+      "answers": {
+        "answer_a": "Use fs.readFile with res.send()",
+        "answer_b": "Use res.download with buffers",
+        "answer_c": "Use HTTP redirects to S3",
+        "answer_d": "Use streams with res.writeStream()"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 98,
+      "question": "How do you enable efficient text search on a MongoDB collection?",
+      "description": "Optimizing text search in MongoDB.",
+      "answers": {
+        "answer_a": "Use $regex with find()",
+        "answer_b": "Use aggregation with $match",
+        "answer_c": "Enable full-text search in config",
+        "answer_d": "Create a text index with createIndex()"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 99,
+      "question": "How do you handle errors in asynchronous Express.js middleware?",
+      "description": "Error handling in async Express.js middleware.",
+      "answers": {
+        "answer_a": "Use try-catch without next()",
+        "answer_b": "Use res.status(500).send()",
+        "answer_c": "Use Promise.reject in middleware",
+        "answer_d": "Pass errors to next() in async middleware"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 100,
+      "question": "How do you optimize rendering of large lists in React?",
+      "description": "Improving performance for React list rendering.",
+      "answers": {
+        "answer_a": "Use useState for each list item",
+        "answer_b": "Render lists in useEffect",
+        "answer_c": "Use Redux to manage list state",
+        "answer_d": "Use keys and React.memo for list items"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 101,
+      "question": "How do you implement pagination in a MySQL query?",
+      "description": "Paginating results in MySQL.",
+      "answers": {
+        "answer_a": "Use WHERE clause for pagination",
+        "answer_b": "Use GROUP BY with LIMIT",
+        "answer_c": "Use OFFSET and LIMIT clauses",
+        "answer_d": "Use subqueries for pagination"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 102,
+      "question": "How do you secure MongoDB against unauthorized access?",
+      "description": "Securing MongoDB databases.",
+      "answers": {
+        "answer_a": "Use open ports without authentication",
+        "answer_b": "Enable authentication and role-based access",
+        "answer_c": "Store credentials in environment variables",
+        "answer_d": "Use SSL without user roles"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 103,
+      "question": "How do you implement caching in an Express.js API?",
+      "description": "Caching responses in Express.js.",
+      "answers": {
+        "answer_a": "Use res.cache() for responses",
+        "answer_b": "Store responses in local variables",
+        "answer_c": "Use middleware like apicache or Redis",
+        "answer_d": "Use setTimeout for caching"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 104,
+      "question": "How do you handle side effects in Redux Toolkit?",
+      "description": "Managing async logic in Redux Toolkit.",
+      "answers": {
+        "answer_a": "Use useEffect in reducers",
+        "answer_b": "Use createAsyncThunk for side effects",
+        "answer_c": "Use synchronous actions only",
+        "answer_d": "Use middleware like express"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 105,
+      "question": "How do you create a writable stream in Node.js?",
+      "description": "Implementing writable streams in Node.js.",
+      "answers": {
+        "answer_a": "Extend Readable and implement _write",
+        "answer_b": "Use fs.createReadStream()",
+        "answer_c": "Extend Writable and implement _write",
+        "answer_d": "Use Transform stream for writing"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 106,
+      "question": "How do you optimize MongoDB queries with projections?",
+      "description": "Reducing data transfer in MongoDB.",
+      "answers": {
+        "answer_a": "Use $match in find()",
+        "answer_b": "Use find() with field projections",
+        "answer_c": "Use aggregation for projections",
+        "answer_d": "Use $project in find()"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 107,
+      "question": "How do you handle file validation in Express.js uploads?",
+      "description": "Validating uploaded files in Express.js.",
+      "answers": {
+        "answer_a": "Use req.body for file validation",
+        "answer_b": "Use multer with fileFilter option",
+        "answer_c": "Use fs.readFile for validation",
+        "answer_d": "Use express-validator for files"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 108,
+      "question": "How do you use React Query for data fetching?",
+      "description": "Fetching data with React Query.",
+      "answers": {
+        "answer_a": "Use useEffect with fetch",
+        "answer_b": "Use useQuery with a query key",
+        "answer_c": "Use Redux for queries",
+        "answer_d": "Use axios in useState"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 109,
+      "question": "How do you handle database transactions in Node.js with MySQL?",
+      "description": "Managing transactions in MySQL with Node.js.",
+      "answers": {
+        "answer_a": "Use single queries without transactions",
+        "answer_b": "Use connection.beginTransaction()",
+        "answer_c": "Use async/await without commits",
+        "answer_d": "Use stored procedures only"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        },
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 110,
+      "question": "How do you implement a compound index in MongoDB?",
+      "description": "Creating compound indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use createIndex({ field1: 1, field2: 1 })",
+        "answer_b": "Use find() with multiple fields",
+        "answer_c": "Use $index with multiple fields",
+        "answer_d": "Use aggregation for indexing"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 111,
+      "question": "How do you log requests in an Express.js application?",
+      "description": "Logging HTTP requests in Express.js.",
+      "answers": {
+        "answer_a": "Use console.log in routes",
+        "answer_b": "Use morgan middleware",
+        "answer_c": "Use res.log() for requests",
+        "answer_d": "Use express.logger()"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 112,
+      "question": "How do you handle optimistic updates in React?",
+      "description": "Implementing optimistic UI updates.",
+      "answers": {
+        "answer_a": "Use Redux for all updates",
+        "answer_b": "Update state before API confirmation",
+        "answer_c": "Use useEffect for updates",
+        "answer_d": "Use server-side rendering"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 113,
+      "question": "How do you manage environment-specific configurations in Node.js?",
+      "description": "Handling configurations in Node.js.",
+      "answers": {
+        "answer_a": "Hardcode configs in code",
+        "answer_b": "Use process.env with dotenv",
+        "answer_c": "Use req.params for configs",
+        "answer_d": "Use database for configs"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 114,
+      "question": "How do you optimize MySQL for high read traffic?",
+      "description": "Scaling MySQL for read-heavy workloads.",
+      "answers": {
+        "answer_a": "Increase table size",
+        "answer_b": "Use read replicas",
+        "answer_c": "Disable indexes",
+        "answer_d": "Use single table design"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 115,
+      "question": "How do you perform a case-insensitive search in MongoDB?",
+      "description": "Querying with case-insensitive criteria.",
+      "answers": {
+        "answer_a": "Use $text operator",
+        "answer_b": "Use $regex with 'i' option",
+        "answer_c": "Use find() with lowercase",
+        "answer_d": "Use aggregation for case"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 116,
+      "question": "How do you implement session management in Express.js?",
+      "description": "Managing user sessions in Express.js.",
+      "answers": {
+        "answer_a": "Use req.session without middleware",
+        "answer_b": "Use express-session middleware",
+        "answer_c": "Use local storage for sessions",
+        "answer_d": "Use JWT for all sessions"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 117,
+      "question": "How do you handle infinite scroll in React?",
+      "description": "Implementing infinite scroll in React.",
+      "answers": {
+        "answer_a": "Use Redux for scroll state",
+        "answer_b": "Use IntersectionObserver with useEffect",
+        "answer_c": "Use setInterval for scrolling",
+        "answer_d": "Use useState for scroll position"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 118,
+      "question": "How do you handle SIGTERM signals in Node.js?",
+      "description": "Graceful shutdown in Node.js.",
+      "answers": {
+        "answer_a": "Use process.exit() directly",
+        "answer_b": "Use process.on('SIGTERM')",
+        "answer_c": "Use async/await for signals",
+        "answer_d": "Use setTimeout for shutdown"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 119,
+      "question": "How do you use MySQL triggers?",
+      "description": "Implementing triggers in MySQL.",
+      "answers": {
+        "answer_a": "Use stored procedures for triggers",
+        "answer_b": "Use CREATE TRIGGER for events",
+        "answer_c": "Use views for triggers",
+        "answer_d": "Use indexes for events"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 120,
+      "question": "How do you aggregate data in MongoDB with grouping?",
+      "description": "Using aggregation for grouping in MongoDB.",
+      "answers": {
+        "answer_a": "Use find() with $group",
+        "answer_b": "Use $group in aggregation pipeline",
+        "answer_c": "Use mapReduce for grouping",
+        "answer_d": "Use $match for grouping"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 121,
+      "question": "How do you handle CSRF protection in Express.js?",
+      "description": "Securing forms in Express.js.",
+      "answers": {
+        "answer_a": "Use JWT for all forms",
+        "answer_b": "Use csurf middleware",
+        "answer_c": "Use req.body for tokens",
+        "answer_d": "Use local storage for tokens"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 122,
+      "question": "How do you implement a custom error boundary in React?",
+      "description": "Handling errors in React components.",
+      "answers": {
+        "answer_a": "Use useEffect for errors",
+        "answer_b": "Create a class component with componentDidCatch",
+        "answer_c": "Use Redux for error handling",
+        "answer_d": "Use try-catch in functional components"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 123,
+      "question": "How do you monitor performance in a Node.js application?",
+      "description": "Tracking performance metrics in Node.js.",
+      "answers": {
+        "answer_a": "Use console.time for all routes",
+        "answer_b": "Use performance hooks or tools like New Relic",
+        "answer_c": "Use setInterval for metrics",
+        "answer_d": "Use PM2 without monitoring"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 124,
+      "question": "How do you optimize JOIN operations in MySQL?",
+      "description": "Improving JOIN performance in MySQL.",
+      "answers": {
+        "answer_a": "Use subqueries instead of JOINs",
+        "answer_b": "Add indexes on JOIN columns",
+        "answer_c": "Increase table size",
+        "answer_d": "Use temporary tables"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 125,
+      "question": "How do you handle schema validation in MongoDB?",
+      "description": "Enforcing data structure in MongoDB.",
+      "answers": {
+        "answer_a": "Use find() with $schema",
+        "answer_b": "Use Mongoose with schema definitions",
+        "answer_c": "Use aggregation for validation",
+        "answer_d": "Use $validate operator"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 126,
+      "question": "How do you implement a RESTful API in Express.js?",
+      "description": "Building REST APIs with Express.js.",
+      "answers": {
+        "answer_a": "Use GraphQL for REST",
+        "answer_b": "Define routes with HTTP methods",
+        "answer_c": "Use WebSockets for APIs",
+        "answer_d": "Use middleware for all routes"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 127,
+      "question": "How do you implement memoization in React hooks?",
+      "description": "Optimizing performance with memoization.",
+      "answers": {
+        "answer_a": "Use useState for memoization",
+        "answer_b": "Use useMemo and useCallback",
+        "answer_c": "Use Redux for memoized values",
+        "answer_d": "Use useEffect for memoization"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 128,
+      "question": "How do you handle backpressure in Node.js streams?",
+      "description": "Managing stream flow in Node.js.",
+      "answers": {
+        "answer_a": "Use buffers for all streams",
+        "answer_b": "Use pipe() without control",
+        "answer_c": "Monitor writableHighWaterMark",
+        "answer_d": "Use async/await for streams"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 129,
+      "question": "How do you use MySQL full-text search?",
+      "description": "Implementing full-text search in MySQL.",
+      "answers": {
+        "answer_a": "Use LIKE for text search",
+        "answer_b": "Use MATCH AGAINST with FULLTEXT index",
+        "answer_c": "Use subqueries for text",
+        "answer_d": "Use REGEXP for search"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 130,
+      "question": "How do you implement data sharding in MongoDB?",
+      "description": "Distributing data in MongoDB.",
+      "answers": {
+        "answer_a": "Use replica sets for sharding",
+        "answer_b": "Use sh.shardCollection() with a shard key",
+        "answer_c": "Use aggregation for sharding",
+        "answer_d": "Use indexes for distribution"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 131,
+      "question": "How do you handle timeouts in Express.js routes?",
+      "description": "Managing timeouts in Express.js.",
+      "answers": {
+        "answer_a": "Use setTimeout in routes",
+        "answer_b": "Use express-timeout middleware",
+        "answer_c": "Use res.timeout()",
+        "answer_d": "Use async/await for timeouts"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 132,
+      "question": "How do you handle dynamic imports in React?",
+      "description": "Loading components dynamically in React.",
+      "answers": {
+        "answer_a": "Use useState for imports",
+        "answer_b": "Use React.lazy with dynamic import()",
+        "answer_c": "Use Redux for dynamic components",
+        "answer_d": "Use useEffect for static imports"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN", 
+      "difficulty": "Hard"
+    },
+    {
+      "id": 133,
+      "question": "How do you implement a custom middleware in Node.js?",
+      "description": "Creating custom middleware for Node.js applications.",
+      "answers": {
+        "answer_a": "Use app.get() for middleware",
+        "answer_b": "Define a function with req, res, next parameters",
+        "answer_c": "Use async/await without next()",
+        "answer_d": "Use process.env for middleware"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 134,
+      "question": "How do you handle table locks in MySQL?",
+      "description": "Managing concurrency with table locks in MySQL.",
+      "answers": {
+        "answer_a": "Use LOCK TABLES and UNLOCK TABLES",
+        "answer_b": "Use indexes for locking",
+        "answer_c": "Use subqueries for locks",
+        "answer_d": "Use stored procedures for locking"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 135,
+      "question": "How do you perform a lookup in MongoDB aggregation?",
+      "description": "Joining collections in MongoDB aggregation.",
+      "answers": {
+        "answer_a": "Use $match for lookups",
+        "answer_b": "Use $lookup in aggregation pipeline",
+        "answer_c": "Use find() with $lookup",
+        "answer_d": "Use $join operator"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 136,
+      "question": "How do you implement request throttling in Express.js?",
+      "description": "Limiting request rates in Express.js.",
+      "answers": {
+        "answer_a": "Use setTimeout for throttling",
+        "answer_b": "Use express-rate-limit middleware",
+        "answer_c": "Use res.limit() for requests",
+        "answer_d": "Use async middleware for limits"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 137,
+      "question": "How do you implement a custom reducer in React?",
+      "description": "Using useReducer for state management in React.",
+      "answers": {
+        "answer_a": "Use useState with reducers",
+        "answer_b": "Define a reducer function with useReducer",
+        "answer_c": "Use Redux for all reducers",
+        "answer_d": "Use useEffect for state logic"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 138,
+      "question": "How do you handle file compression in Node.js?",
+      "description": "Compressing files in Node.js.",
+      "answers": {
+        "answer_a": "Use fs.writeFile for compression",
+        "answer_b": "Use zlib module for compression",
+        "answer_c": "Use buffers for compression",
+        "answer_d": "Use streams without compression"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 139,
+      "question": "How do you implement a composite key in MySQL?",
+      "description": "Creating composite keys in MySQL tables.",
+      "answers": {
+        "answer_a": "Use PRIMARY KEY on a single column",
+        "answer_b": "Use PRIMARY KEY (column1, column2)",
+        "answer_c": "Use indexes for composite keys",
+        "answer_d": "Use foreign keys for composites"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 140,
+      "question": "How do you handle duplicate key errors in MongoDB inserts?",
+      "description": "Managing duplicate key errors in MongoDB.",
+      "answers": {
+        "answer_a": "Use updateOne() instead of insert",
+        "answer_b": "Use try-catch with insert operations",
+        "answer_c": "Use $unique operator",
+        "answer_d": "Use aggregation to check duplicates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 141,
+      "question": "How do you handle multipart form data in Express.js?",
+      "description": "Processing multipart data in Express.js.",
+      "answers": {
+        "answer_a": "Use body-parser for multipart",
+        "answer_b": "Use express.json for forms",
+        "answer_c": "Use multer middleware",
+        "answer_d": "Use req.body for multipart"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 142,
+      "question": "How do you implement a custom context consumer in React?",
+      "description": "Consuming context in React.",
+      "answers": {
+        "answer_a": "Use useState for context",
+        "answer_b": "Use useContext hook",
+        "answer_c": "Use Redux for context",
+        "answer_d": "Use Context.Consumer component"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 143,
+      "question": "How do you implement a custom event emitter in Node.js?",
+      "description": "Creating event-driven systems in Node.js.",
+      "answers": {
+        "answer_a": "Use process.emit()",
+        "answer_b": "Extend EventEmitter class",
+        "answer_c": "Use async/await for events",
+        "answer_d": "Use setInterval for events"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+      },
+    {
+      "id": 144,
+      "question": "How do you optimize MySQL for high-concurrency environments?",
+      "description": "Scaling MySQL for concurrent access.",
+      "answers": {
+        "answer_a": "Use single table for all data",
+        "answer_b": "Configure thread pool and connection pooling",
+        "answer_c": "Disable transactions",
+        "answer_d": "Use temporary tables for concurrency"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+      },
+    {
+      "id": 145,
+      "question": "How do you implement geospatial queries in MongoDB?",
+      "description": "Querying geospatial data in MongoDB.",
+      "answers": {
+        "answer_a": "Use $regex for geospatial",
+        "answer_b": "Use $geoNear with geospatial index",
+        "answer_c": "Use find() with coordinates",
+        "answer_d": "Use $match for geospatial"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "146",
+      "question": "How do you implement a GraphQL API in Express.js?",
+      "description": "Building a GraphQL API with Express.js.",
+      "answers": {
+        "answer_a": "Use REST for GraphQL",
+        "answer_b": "Use apollo-server-express",
+        "answer_c": "Use WebSockets for GraphQL",
+        "answer_d": "Use middleware for queries"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 147,
+      "question": "How do you implement a custom hook for window resizing in React?",
+      "description": "Handling window resize events in React.",
+      "answers": {
+        "answer_a": "Use useState for resize",
+        "answer_b": "Use useEffect with window resize listener",
+        "answer_c": "Use Redux for resize events",
+        "answer_d": "Use setInterval for resizing"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 148,
+      "question": "How do you handle child process errors in Node.js?",
+      "description": "Managing errors in Node.js child processes.",
+      "answers": {
+        "answer_a": "Use try-catch for child processes",
+        "answer_b": "Listen to error events on child_process",
+        "answer_c": "Use async/await for errors",
+        "answer_d": "Use setTimeout for error handling"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 149,
+      "question": "How do you implement a check constraint in MySQL?",
+      "description": "Enforcing data rules in MySQL.",
+      "answers": {
+        "answer_a": "Use triggers for constraints",
+        "answer_b": "Use CHECK clause in table definition",
+        "answer_c": "Use indexes for checks",
+        "answer_d": "Use stored procedures for rules"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 150,
+      "question": "How do you implement a TTL index in MongoDB?",
+      "description": "Creating time-to-live indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use $ttl operator",
+        "answer_b": "Use createIndex with expireAfterSeconds",
+        "answer_c": "Use aggregation for TTL",
+        "answer_d": "Use find() with timeout"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 151,
+      "question": "How do you implement a custom error handler in Express.js?",
+      "description": "Handling errors in Express.js applications.",
+      "answers": {
+        "answer_a": "Use res.error()",
+        "answer_b": "Define middleware with four parameters",
+        "answer_c": "Use try-catch in routes",
+        "answer_d": "Use async/await for errors"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 152,
+      "question": "How do you implement a custom transition in React?",
+      "description": "Managing transitions in React.",
+      "answers": {
+        "answer_a": "Use useState for transitions",
+        "answer_b": "Use React Transition Group",
+        "answer_c": "Use CSS animations only",
+        "answer_d": "Use Redux for transitions"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 153,
+      "question": "How do you implement a custom DNS resolver in Node.js?",
+      "description": "Resolving DNS queries in Node.js.",
+      "answers": {
+        "answer_a": "Use http.get for DNS",
+        "answer_b": "Use dns.resolve() with custom logic",
+        "answer_c": "Use async/await for DNS",
+        "answer_d": "Use setInterval for resolving"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 154,
+      "question": "How do you implement a materialized view in MySQL?",
+      "description": "Creating materialized views in MySQL.",
+      "answers": {
+        "answer_a": "Use regular views with cache",
+        "answer_b": "Use stored procedures for views",
+        "answer_c": "Use tables with scheduled updates",
+        "answer_d": "Use triggers for views"
+      },
+      "correct_answers": {
+        "answer_c_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 155,
+      "question": "How do you implement a capped collection in MongoDB?",
+      "description": "Creating fixed-size collections in MongoDB.",
+      "answers": {
+        "answer_a": "Use $limit in collection",
+        "answer_b": "Use createCollection with capped option",
+        "answer_c": "Use aggregation for limits",
+        "answer_d": "Use find() with size limit"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 156,
+      "question": "How do you implement a health check endpoint in Express.js?",
+      "description": "Monitoring application health in Express.js.",
+      "answers": {
+        "answer_a": "Use res.health()",
+        "answer_b": "Create a route returning status",
+        "answer_c": "Use middleware for health",
+        "answer_d": "Use async/await for checks"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 157,
+      "question": "How do you implement a custom ref in React?",
+      "description": "Managing refs in React components.",
+      "answers": {
+        "answer_a": "Use useEffect for refs",
+        "answer_b": "Use React.createRef or useRef",
+        "answer_c": "Use Redux for refs",
+        "answer_d": "Use useState for refs"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 158,
+      "question": "How do you implement a custom UDP server in Node.js?",
+      "description": "Creating UDP servers in Node.js.",
+      "answers": {
+        "answer_a": "Use http.createServer for UDP",
+        "answer_b": "Use dgram.createSocket",
+        "answer_c": "Use async/await for UDP",
+        "answer_d": "Use setInterval for UDP"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 159,
+      "question": "How do you handle MySQL connection errors in Node.js?",
+      "description": "Managing MySQL connection issues in Node.js.",
+      "answers": {
+        "answer_a": "Use try-catch for all queries",
+        "answer_b": "Listen to error events on connection",
+        "answer_c": "Use async/await for connections",
+        "answer_d": "Use setTimeout for retries"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        },
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 160,
+      "question": "How do you implement a unique constraint in MongoDB?",
+      "description": "Enforcing uniqueness in MongoDB.",
+      "answers": {
+        "answer_a": "Use $unique in schema",
+        "answer_b": "Create a unique index",
+        "answer_c": "Use aggregation for uniqueness",
+        "answer_d": "Use findOne() for checks"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 161,
+      "question": "How do you implement a custom rate limiter in Express.js?",
+      "description": "Building custom rate limiting in Express.js.",
+      "answers": {
+        "answer_a": "Use res.limit()",
+        "answer_b": "Track requests with middleware",
+        "answer_c": "Use async/await for limits",
+        "answer_d": "Use setTimeout for rates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 162,
+      "question": "How do you implement a custom modal in React?",
+      "description": "Creating modal dialogs in React.",
+      "answers": {
+        "answer_a": "Use useState with conditional rendering",
+        "answer_b": "Use Redux for modals",
+        "answer_c": "Use useEffect for modals",
+        "answer_d": "Use window.alert for dialogs"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 163,
+      "question": "How do you implement a custom HTTP client in Node.js?",
+      "description": "Making HTTP requests in Node.js.",
+      "answers": {
+        "answer_a": "Use http.request with custom logic",
+        "answer_b": "Use fetch in Node.js",
+        "answer_c": "Use async/await without http",
+        "answer_d": "Use setInterval for requests"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 164,
+      "question": "How do you handle large result sets in MySQL?",
+      "description": "Managing large datasets in MySQL queries.",
+      "answers": {
+        "answer_a": "Use LIMIT without OFFSET",
+        "answer_b": "Use cursor-based pagination",
+        "answer_c": "Use subqueries for results",
+        "answer_d": "Use single table scan"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 165,
+      "question": "How do you implement a partial index in MongoDB?",
+      "description": "Creating partial indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use $partial operator",
+        "answer_b": "Use createIndex with partialFilterExpression",
+        "answer_c": "Use aggregation for partials",
+        "answer_d": "Use find() with partials"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 166,
+      "question": "How do you implement a custom logger in Express.js?",
+      "description": "Creating a custom logging solution in Express.js.",
+      "answers": {
+        "answer_a": "Use console.log for logs",
+        "answer_b": "Create middleware for logging",
+        "answer_c": "Use res.log()",
+        "answer_d": "Use async/await for logs"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 167,
+      "question": "How do you implement a custom tooltip in React?",
+      "description": "Adding a tooltip components to React.",
+      "answers": {
+        "answer_a": "Use CSS with state for tooltips",
+        "answer_b": "Use Redux for tooltips",
+        "answer_c": "Use useEffect for tooltips",
+        "answer_d": "Use window.alert for tips"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 168,
+      "question": "How do you implement a WebRTC server in Node.js?",
+      "description": "Building a WebRTC applications in Node.js.",
+      "answers": {
+        "answer_a": "Use HTTP for WebRTC",
+        "answer_b": "Use libraries like wrtc or simple-peer",
+        "answer_c": "Use async/await for WebRTC",
+        "answer_d": "Use setInterval for signaling"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 169,
+      "question": "How do you implement a connection timeout in MySQL in Node.js?",
+      "description": "Handling MySQL timeouts in Node.js.",
+      "answers": {
+        "answer_a": "Use setTimeout for connections",
+        "answer_b": "Configure connectTimeout in mysql2",
+        "answer_c": "Use async/await for timeouts",
+        "answer_d": "Use connection pooling only"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        },
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 170,
+      "question": "How do you implement a sparse index in MongoDB?",
+      "description": "Creating sparse indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use $sparse operator",
+        "answer_b": "Create index with sparse option",
+        "answer_c": "Use aggregation for sparse",
+        "answer_d": "Use find() with sparse"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 171,
+      "question": "How do you implement a custom authentication middleware in Express.js?",
+      "description": "Building authentication logic in Express.js.",
+      "answers": {
+        "answer_a": "Use res.auth()",
+        "answer_b": "Create middleware to check auth tokens",
+        "answer_c": "Use async/await without next()",
+        "answer_d": "Use setTimeout for auth"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 172,
+      "question": "How do you implement a custom carousel in React?",
+      "description": "Creating a carousel component in React.",
+      "answers": {
+        "answer_a": "Use state and CSS for carousel",
+        "answer_b": "Use Redux for carousel",
+        "answer_c": "Use useEffect for slides",
+        "answer_d": "Use window.scroll for carousel"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 173,
+      "question": "How do you implement a TCP server in Node.js?",
+      "description": "Building TCP servers in Node.js.",
+      "answers": {
+        "answer_a": "Use http.createServer for TCP",
+        "answer_b": "Use net.createServer",
+        "answer_c": "Use async/await for TCP",
+        "answer_d": "Use setInterval for connections"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 174,
+      "question": "How do you handle query optimization in MySQL?",
+      "description": "Improving query performance in MySQL.",
+      "answers": {
+        "answer_a": "Use subqueries for all queries",
+        "answer_b": "Use EXPLAIN and optimize indexes",
+        "answer_c": "Increase table size",
+        "answer_d": "Use temporary tables"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 175,
+      "question": "How do you implement a time-series collection in MongoDB?",
+      "description": "Storing time-series data in MongoDB.",
+      "answers": {
+        "answer_a": "Use $time operator",
+        "answer_b": "Create collection with timeseries option",
+        "answer_c": "Use aggregation for time-series",
+        "answer_d": "Use find() with timestamps"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 176,
+      "question": "How do you implement a custom response format in Express.js?",
+      "description": "Standardizing API responses in Express.js.",
+      "answers": {
+        "answer_a": "Use res.format()",
+        "answer_b": "Create middleware for response formatting",
+        "answer_c": "Use async/await for formats",
+        "answer_d": "Use setTimeout for responses"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 177,
+      "question": "How do you implement a custom dropdown in React?",
+      "description": "Creating dropdown components in React.",
+      "answers": {
+        "answer_a": "Use state and CSS for dropdowns",
+        "answer_b": "Use Redux for dropdowns",
+        "answer_c": "Use useEffect for options",
+        "answer_d": "Use window.select for dropdowns"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 178,
+      "question": "How do you implement a message queue in Node.js?",
+      "description": "Using message queues in Node.js.",
+      "answers": {
+        "answer_a": "Use setTimeout for queues",
+        "answer_b": "Use libraries like RabbitMQ or Bull",
+        "answer_c": "Use async/await for queues",
+        "answer_d": "Use event emitters for queues"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 179,
+      "question": "How do you handle MySQL replication lag?",
+      "description": "Managing replication delays in MySQL.",
+      "answers": {
+        "answer_a": "Increase table size",
+        "answer_b": "Monitor and optimize replica performance",
+        "answer_c": "Disable replication",
+        "answer_d": "Use single master only"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 180,
+      "question": "How do you implement a full-text index in MongoDB?",
+      "description": "Creating full-text indexes in MongoDB.",
+      "answers": {
+        "answer_a": "Use $text operator",
+        "answer_b": "Create a text index",
+        "answer_c": "Use aggregation for text",
+        "answer_d": "Use find() with text"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 181,
+      "question": "How do you implement a custom validator in Express.js?",
+      "description": "Validating requests in Express.js.",
+      "answers": {
+        "answer_a": "Use res.validate()",
+        "answer_b": "Use express-validator middleware",
+        "answer_c": "Use async/await for validation",
+        "answer_d": "Use setTimeout for validation"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 182,
+      "question": "How do you implement a custom accordion in React?",
+      "description": "Creating accordion components in React.",
+      "answers": {
+        "answer_a": "Use state and CSS for accordions",
+        "answer_b": "Use Redux for accordions",
+        "answer_c": "Use useEffect for sections",
+        "answer_d": "Use window.toggle for accordions"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 183,
+      "question": "How do you implement a custom file system watcher in Node.js?",
+      "description": "Monitoring file changes in Node.js.",
+      "answers": {
+        "answer_a": "Use setInterval for watching",
+        "answer_b": "Use fs.watch or chokidar",
+        "answer_c": "Use async/await for watching",
+        "answer_d": "Use event emitters for files"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 184,
+      "question": "How do you handle MySQL backup strategies?",
+      "description": "Backing up MySQL databases.",
+      "answers": {
+        "answer_a": "Use triggers for backups",
+        "answer_b": "Use mysqldump or logical backups",
+        "answer_c": "Use indexes for backups",
+        "answer_d": "Use stored procedures for backups"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 185,
+      "question": "How do you implement a multi-field sort in MongoDB?",
+      "description": "Sorting by multiple fields in MongoDB.",
+      "answers": {
+        "answer_a": "Use $sort operator",
+        "answer_b": "Use sort() with multiple fields",
+        "answer_c": "Use aggregation for sorting",
+        "answer_d": "Use find() with sort"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 186,
+      "question": "How do you implement a custom middleware for compression in Express.js?",
+      "description": "Compressing responses in Express.js.",
+      "answers": {
+        "answer_a": "Use res.compress()",
+        "answer_b": "Use compression middleware",
+        "answer_c": "Use async/await for compression",
+        "answer_d": "Use setTimeout for compression"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 187,
+      "question": "How do you implement a custom pagination component in React?",
+      "description": "Creating pagination in React.",
+      "answers": {
+        "answer_a": "Use state and props for pagination",
+        "answer_b": "Use Redux for pages",
+        "answer_c": "Use useEffect for pages",
+        "answer_d": "Use window.scroll for pagination"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 188,
+      "question": "How do you implement a custom task scheduler in Node.js?",
+      "description": "Scheduling tasks in Node.js.",
+      "answers": {
+        "answer_a": "Use setTimeout for tasks",
+        "answer_b": "Use libraries like node-cron",
+        "answer_c": "Use async/await for scheduling",
+        "answer_d": "Use event emitters for tasks"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 189,
+      "question": "How do you handle MySQL table partitioning?",
+      "description": "Partitioning tables in MySQL.",
+      "answers": {
+        "answer_a": "Use indexes for partitioning",
+        "answer_b": "Use PARTITION BY clause",
+        "answer_c": "Use subqueries for partitions",
+        "answer_d": "Use stored procedures for partitions"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 190,
+      "question": "How do you implement a conditional update in MongoDB?",
+      "description": "Updating documents conditionally in MongoDB.",
+      "answers": {
+        "answer_a": "Use $cond operator",
+        "answer_b": "Use updateOne with query conditions",
+        "answer_c": "Use aggregation for updates",
+        "answer_d": "Use find() with updates"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 191,
+      "question": "How do you implement a custom CORS policy in Express.js?",
+      "description": "Configuring CORS in Express.js.",
+      "answers": {
+        "answer_a": "Use res.cors()",
+        "answer_b": "Use cors middleware with options",
+        "answer_c": "Use async/await for CORS",
+        "answer_d": "Use setTimeout for CORS"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 192,
+      "question": "How do you implement a custom tabs component in React?",
+      "description": "Creating tabbed interfaces in React.",
+      "answers": {
+        "answer_a": "Use state and CSS for tabs",
+        "answer_b": "Use Redux for tabs",
+        "answer_c": "Use useEffect for tab switching",
+        "answer_d": "Use window.tabs for interfaces"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 193,
+      "question": "How do you implement a custom metrics collector in Node.js?",
+      "description": "Collecting application metrics in Node.js.",
+      "answers": {
+        "answer_a": "Use setInterval for metrics",
+        "answer_b": "Use libraries like prom-client",
+        "answer_c": "Use async/await for metrics",
+        "answer_d": "Use event emitters for metrics"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 194,
+      "question": "How do you handle file uploads in Express.js?",
+      "description": "Managing file uploads in Express.js.",
+      "answers": {
+        "answer_a": "Use body-parser for file uploads",
+        "answer_b": "Use express-fileupload middleware",
+        "answer_c": "Use fs.readFile for uploads",
+        "answer_d": "Use multer middleware"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 195,
+      "question": "How do you implement a custom search bar in React?",
+      "description": "Creating search functionality in React.",
+      "answers": {
+        "answer_a": "Use state and input handling",
+        "answer_b": "Use Redux for search",
+        "answer_c": "Use useEffect for search",
+        "answer_d": "Use window.search for queries"
+      },
+      "correct_answers": {
+        "answer_a_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 196,
+      "question": "How do you implement a custom rate limiter in Node.js?",
+      "description": "Limiting requests in Node.js.",
+      "answers": {
+        "answer_a": "Use setTimeout for limits",
+        "answer_b": "Use a library like rate-limiter",
+        "answer_c": "Use async/await for limits",
+        "answer_d": "Use event emitters for limits"
+      },
+      "correct_answers": {
+        "answer_b_correct": true
+      },
+      "tags": [
+        {
+          "name": "nodeJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+
+    {
+      "id": 197,
+      "question": "How do you optimize indexing strategies in MySQL for query performance?",
+      "description": "Optimizing indexes in MySQL.",
+      "answers": {
+        "answer_a": "Add indexes on all columns",
+        "answer_b": "Use full-text indexes for all queries",
+        "answer_c": "Drop indexes to improve writes",
+        "answer_d": "Use covering indexes for frequent queries"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mysql"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 198,
+      "question": "How do you ensure data consistency in MongoDB when updating multiple documents?",
+      "description": "Managing multi-document updates in MongoDB.",
+      "answers": {
+        "answer_a": "Use findAndModify for all updates",
+        "answer_b": "Use $set with updateMany()",
+        "answer_c": "Use aggregation pipeline for updates",
+        "answer_d": "Use transactions with session.startTransaction()"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "mongoDB"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 199,
+      "question": "How do you protect an Express.js application against SQL injection attacks?",
+      "description": "Securing Express.js against SQL injection.",
+      "answers": {
+        "answer_a": "Sanitize inputs with regex",
+        "answer_b": "Use middleware to block SQL keywords",
+        "answer_c": "Store queries in environment variables",
+        "answer_d": "Use parameterized queries with a database driver"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "expressJS"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 200,
+      "question": "How do you optimize a React component to prevent unnecessary re-renders?",
+      "description": "Improving React component performance.",
+      "answers": {
+        "answer_a": "Use useState for all props",
+        "answer_b": "Wrap components in useEffect",
+        "answer_c": "Store props in Redux store",
+        "answer_d": "Use React.memo with useCallback for props"
+      },
+      "correct_answers": {
+        "answer_d_correct": true
+      },
+      "tags": [
+        {
+          "name": "react"
+        }
+      ],
+      "category": "MERN",
+      "difficulty": "Hard"
+    }
+  ]
+}
